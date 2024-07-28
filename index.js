@@ -129,6 +129,7 @@ function removeProductsFromBasket(productId){
         return product.id !== productId
     })
     basketproductGenerator(userBasket)
+    calcTotalPrice(userBasket)
     console.log(productId)
 }
 
@@ -136,6 +137,7 @@ function removeProductsFromBasket(productId){
 removeAllBtn.addEventListener('click' , function(){
     userBasket = []
     basketproductGenerator(userBasket)
+    calcTotalPrice(userBasket)
 })
 
 
